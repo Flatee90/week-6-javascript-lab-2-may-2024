@@ -17,6 +17,9 @@ function partOneA () {
 function partOneB () {
   alert("Try it!");
   // 1. Create a for loop.
+  for (let i = 2; i < highNumber; i++) {
+
+  
 
     // 2. give the user and alert with the current number.
 
@@ -47,8 +50,10 @@ function partTwoB () {
   messageParagraph.innerHTML = "Flavors";
 
   // 1. Create an array of 5 flavors
+  let flavors = ["Chocolate", "Vanilla", "butter pecan"]
 
   // 2. Find the length of the array
+  let highNumber = flavors.
 
   // 3. Create a for loop.
 
