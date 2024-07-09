@@ -30,6 +30,7 @@ function partOneB () {
   friends [7] = Toni 
 
   // 2. TODO: write your friends to the message
+  messageParagraph.innerHTML = "I love my friends. They are always there for me. Thanks to ${friends[0]}, ${friends [1]}, ${friends [2]}, ${friends[3]}, ${friends[4]}, ${friends[5]}, ${friends[6]}, ${friends[7]} yall are my rock! ";
   
 
 }
@@ -59,8 +60,19 @@ function partTwoA () {
 function partTwoB () {
   let friends = [];
   // 1. Add your friends to the array
+  friends[0] = "Jarrell";
+  friends[1] = "Devon";
+  friends[2] = "Toni";
+  friends[3] = "Ahreal";
+  
 
   // 2. write your friends to the innerHTML of the document
+  messageParagraph.innerHTML = "your friends are";
+  messageParagraph.innerHTML += `${friends[0]}`;
+  messageParagraph.innerHTML += `${friends[1]}`;
+  messageParagraph.innerHTML += `${friends[2]}`;
+  messageParagraph.innerHTML += `${friends[3]}`;
+
 
 }
 
@@ -68,7 +80,7 @@ function partTwoB () {
 // add more friends from the prompt
 function partThreeA () {
   // 1. prompt for a friend
-  let friend = prompt("Enter a friend's name.");
+  let friend = prompt("Enter a friends's name.");
 
   // 2. add the friend to the message
   messageParagraph.innerHTML += `, ${friend}`;
@@ -78,8 +90,10 @@ function partThreeA () {
 // Try prompting for a friend with a slightly different prompt or writing the message in a slightly different format.
 function partThreeB () {
   // 1. prompt for a friend
+  let friend = prompt("What is your favorite color?");
 
   // 2. add the friend to the message
+  messageParagraph.innerHTML += `, ${friend}`;
 }
 
 // Example
@@ -112,12 +126,16 @@ function partFourB () {
   totalFavFlavors = myFavFlavors.length;
 
   // 1. prompt for a flavor
+  newFavFlavor = prompt(`You have ${totalFavFlavors} ice cream flavors. To add a new one, please enter another flavor.`);
+
 
   // 2. add the flavor to the array with push()
+  myFavFlavors.push(newFavFlavor);
 
   // 3. add the flavor to the message
+  messageList.innerHTML += `<li>${newFavFlavor}</li>`;
 
   // 4. log the array to the console for debugging
-
+console.log(newFavFlavor);
 }
 
