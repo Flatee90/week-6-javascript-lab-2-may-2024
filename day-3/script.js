@@ -21,8 +21,16 @@ function partOneB () {
   let friends 
   friends = [];
   // 1. TODO: Add your own friends to the array
+  friends [0] = Jarrell
+  friends [1] = Devon 
+  friends [3] = Nick
+  friends [4] = Saci 
+  friends[5] = Ahreal
+  friends[6] = Shantrell
+  friends [7] = Toni 
 
   // 2. TODO: write your friends to the message
+  
 
 }
 

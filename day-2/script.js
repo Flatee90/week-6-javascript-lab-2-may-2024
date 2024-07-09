@@ -153,15 +153,14 @@ function partFourB () {
 
 }
 
-let playerOne, playerTwo;
-playerOne = prompt("Player one, choose rock, paper, or scissors.");
-playerTwo = prompt("Player two, choose rock, paper, or scissors.");
-if(playerOne === "paper" && playerTwo === "scissors"){
+function partFourB () {
+playerOne = prompt("Player one, choose rock, paper, or scissors");
+playerTwo = prompt("Player two, choose rock, paper, or scissors.");}
+if(playerOne === "paper" && playerTwo === "scissors") { 
   messageParagraph.innerHTML = "Playertwo wins!";
-  {else if 
-
-
-
-
-
-()
+} else if (playerOne === "paper" && playerTwo === "rock"){
+  messageParagraph.innerHTML = "PlayerOne wins!";
+} else {
+  messageParagraph.innerHTML = "It's a tie";
+  }
+}
